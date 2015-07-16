@@ -690,6 +690,24 @@ angular.module('xeditable').factory('editableController',
             break;
           }
       });
+      
+      	// https://github.com/vitalets/angular-xeditable/pull/311/files
+      self.inputEl.bind('blur', function(e) {
+          if(!self.single) {
+            return;
+          }
+          if (e.keyCode === 9) {
+            e.preventDefault();
+          }
+          self.scope.$apply(function() {
+            if (self.attrs.blur === 'submit') {
+              self.scope.$form.$submit();
+            } else {
+              self.scope.$form.$cancel();
+            }
+          });
+      });
+
 
       // autosubmit when `no buttons`
       if (self.single && self.buttons === 'no') {
