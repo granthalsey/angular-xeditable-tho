@@ -2,6 +2,9 @@
   "name": "angular-xeditable-tho",
   "version": "0.2.8",
   "description": "Edit in place for AngularJS",
+  "author": "https://github.com/vitalets",
+  "license": "MIT",
+  "homepage": "http://vitalets.github.io/angular-xeditable",
   "main": [
     "dist/css/xeditable.css",
     "dist/js/xeditable.js"
