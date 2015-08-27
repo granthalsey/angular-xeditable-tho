@@ -1,6 +1,6 @@
 {
   "name": "angular-xeditable-tho",
-  "version": "0.2.8,
+  "version": "0.2.8",
   "description": "Edit in place for AngularJS",
   "main": [
     "dist/css/xeditable.css",
